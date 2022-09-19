@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+   font-family:'Open Sans', sans-serif;
+}
+
+body{
+    /*Comando para prencher a tela inteira*/
+    height: 100vh;
+
+    /*Linear gradiente é o mesmo que gradiente linear, normalmente é feito com apenas duas cores*/
+
+    /*120deg, tem como funcao  definir a direcao do gratiente, no caso, 120 graus*/
+    background: linear-gradient(120deg,#8C7B6C,#485059);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*Display flex tem a funcao colocar os objetos um do lado do outro e centralizar os objetos.*/
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;/*Da o espacamento entre os onjetos*/
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0,.5 );
+}
+.relogio div{
+height: 170px;
+width: 150px;
+display:flex;
+flex-direction: column;/*Faz com que os elementos fiquem em colunas e nao em linhas, ficam embaixo do outro*/
+align-items: center;
+justify-content: center;
+color: rgba(255, 255, 255, 0.884);
+background: rgba(5, 5, 5, .9);
+box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+border-radius: 7px;
+letter-spacing: 3px;
+}
+.relogio span{
+  font-weight:bolder ;  
+  /*Engrossa o tamanho da fonte*/
+  font-size: 25px;
+  
+}
+.relogio span.tempo{
+    font-size: 10px;
+}
+
